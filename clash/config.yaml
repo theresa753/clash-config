@@ -174,7 +174,7 @@ FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT))"
 # 代理组
 proxy-groups:
   - { name: 手动选择,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
-  - { name: 家宽选择,     type: select, filter: *FilterHM, hidden: false, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png }
+  - { name: 家宽选择,     type: select, filter: "(?i)(?=.*(家宽|DMIT))", icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
