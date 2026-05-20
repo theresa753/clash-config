@@ -178,8 +178,8 @@ proxy-groups:
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
-  - { name: Gemini,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/gemini-color.png, url: "https://www.google.com/generate_204" }
   - { name: OpenAI,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/openai.png }
+  - { name: Gemini,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/gemini-color.png, url: "https://www.google.com/generate_204" }
   - { name: Claude,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/claude-color.png }
 
   # ===================== 媒体 & 娱乐 =====================
