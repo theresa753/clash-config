@@ -174,7 +174,7 @@ FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|AT))"
 # 代理组
 proxy-groups:
   - { name: 手动选择,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
-  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT))", icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png }
+  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT))", icon: https://telegraph-image-92x.pages.dev/file/d6a4ef2b9c6834007d8ec-5eff855915fb8e44db.png }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
@@ -265,6 +265,8 @@ rules:
   - RULE-SET,ChinaAPP,DIRECT  
 
   # 域名规则集-按照优先级顺序排列
+  - DOMAIN,dogtv.ovohi.de,DIRECT
+  - DOMAIN-KEYWORD,jufyun,DIRECT
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Github,Github
