@@ -199,6 +199,7 @@ proxy-groups:
 
   # ===================== 社交 & 即时通讯 ===================== https://macosicons.com/#/
   - { name: Twitter(X),  type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Twitter(X).png }
+  - { name: Instagram,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Instagram.png }
   - { name: Facebook,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Facebook.png }
   - { name: Telegram,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Telegram.png }
   - { name: WhatsApp,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/WhatsApp.png }
@@ -237,6 +238,7 @@ rule-providers:
   TikTok:           { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/tiktok.mrs }
   WhatsApp:         { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/whatsapp.mrs }
   Twitter:          { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/x.mrs }
+  Instagram:        { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/instagram.mrs }
   Facebook:         { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/facebook.mrs }
   Telegram:         { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs }
   YouTube:          { <<: *BehaviorDN, url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs }
@@ -278,6 +280,7 @@ rules:
   - RULE-SET,Apple,Apple
   - RULE-SET,Claude,Claude
   - RULE-SET,Twitter,Twitter(X)
+  - RULE-SET,Instagram,Instagram
   - RULE-SET,Facebook,Facebook
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Spotify,Spotify
