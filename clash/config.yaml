@@ -168,7 +168,7 @@ FilterJP: &FilterJP "(?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))"
 FilterKR: &FilterKR "(?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))"
 FilterUS: &FilterUS "(?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon valley))"
 FilterUK: &FilterUK "(?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))"
-FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|SK))"
+FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|欧巴))"
 
 
 # 代理组
