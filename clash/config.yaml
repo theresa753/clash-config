@@ -173,7 +173,7 @@ FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|欧巴))"
 
 # 代理组
 proxy-groups:
-  - { name: 手动选择,     type: select, include-all: true, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
+  - { name: 手动选择,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
   - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|SK))", icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
