@@ -183,17 +183,17 @@ proxy-groups:
   - { name: Claude,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/claude-color.png }
 
   # ===================== 媒体 & 娱乐 =====================
+  - { name: YouTube,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/YouTube.png, url: "https://www.youtube.com/generate_204" }
   - { name: Apple,       type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Apple.png, url: "https://www.apple.com/library/test/success.html" }
   - { name: Disney,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Disney.png }
   - { name: Netflix,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Netflix.png }
   - { name: Spotify,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Spotify.png }
   - { name: TikTok,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/TikTok.png }
-  - { name: YouTube,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/YouTube.png, url: "https://www.youtube.com/generate_204" }
-
+  
   # ===================== 生产力 & 常用 =====================
-  - { name: Emby,        type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Emby.png }
-  - { name: Github,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/GitHub.png }
   - { name: Google,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Google_Search.png, url: "https://www.google.com/generate_204" }
+  - { name: Emby,        type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Emby.png }
+  - { name: Github,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/GitHub.png } 
   - { name: Microsoft,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Microsoft.png, url: "http://www.msftconnecttest.com/connecttest.txt" }
   - { name: OneDrive,    type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/OneDrive.png }
 
