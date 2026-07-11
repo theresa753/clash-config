@@ -269,7 +269,9 @@ rules:
   # 域名规则集-按照优先级顺序排列
   - PROCESS-NAME,SGSOL.exe,DIRECT
   - DOMAIN,dogtv.ovohi.de,DIRECT
+  - DOMAIN,shlii.io,🇺🇸 DMIT-美西三网优化（US）
   - DOMAIN-KEYWORD,jufyun,DIRECT
+  - DOMAIN-KEYWORD,lilyemby,DIRECT
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Github,Github
