@@ -168,13 +168,13 @@ FilterJP: &FilterJP "(?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))"
 FilterKR: &FilterKR "(?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))"
 FilterUS: &FilterUS "(?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon valley))"
 FilterUK: &FilterUK "(?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))"
-FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|韭菜))"
+FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|韭菜|Verizon))"
 
 
 # 代理组
 proxy-groups:
   - { name: 手动选择,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
-  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|SK|韭菜))", icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
+  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|SK|韭菜|Verizon))", icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
