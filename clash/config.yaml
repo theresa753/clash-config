@@ -199,14 +199,14 @@ proxy-groups:
   - { name: OneDrive,    type: select, include-all: true, proxies: [自动选择, DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/OneDrive.png }
 
   # ===================== 社交 & 即时通讯 ===================== https://macosicons.com/#/
-  - { name: Facebook,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Facebook.png }
-  - { name: Instagram,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Instagram.png }
-  - { name: Telegram,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Telegram.png }
-  - { name: Twitter(X),  type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Twitter(X).png }
-  - { name: WhatsApp,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/WhatsApp.png }
+  - { name: Facebook,    type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Facebook.png }
+  - { name: Instagram,   type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Instagram.png }
+  - { name: Telegram,    type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Telegram.png }
+  - { name: Twitter(X),  type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Twitter(X).png }
+  - { name: WhatsApp,    type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/WhatsApp.png }
 
   # ===================== 游戏 & 下载 =====================
-  - { name: Steam,       type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Steam.png }
+  - { name: Steam,       type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Steam.png }
 
   # ===================== 自动选择 =====================
   - { name: 自动选择,     type: url-test, include-all: true, url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Auto.png }
