@@ -173,34 +173,36 @@ FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|韭菜|Verizon))"
 
 # 代理组
 proxy-groups:
-  - { name: 手动选择,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
+  - { name: 手动选择,     type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
+  - { name: 自动选择,     type: url-test, include-all: true, url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, hidden: true }
   - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|SK|韭菜|Verizon))", icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
+  - { name: 家宽自动,     type: url-test, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|SK|韭菜|Verizon))", url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, hidden: true }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
-  - { name: OpenAI,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/openai.png }
-  - { name: Gemini,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/gemini-color.png, url: "https://www.google.com/generate_204" }
-  - { name: Claude,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/claude-color.png }
+  - { name: OpenAI,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择, 家宽自动], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/openai.png }
+  - { name: Gemini,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择, 家宽自动], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/gemini-color.png, url: "https://www.google.com/generate_204" }
+  - { name: Claude,     type: select, include-all: true, filter: *FilterHM, proxies: [家宽选择, 家宽自动], icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/claude-color.png }
 
   # ===================== 媒体 & 娱乐 =====================
-  - { name: YouTube,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/YouTube.png, url: "https://www.youtube.com/generate_204" }
+  - { name: YouTube,     type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/YouTube.png, url: "https://www.youtube.com/generate_204" }
   - { name: Apple,       type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Apple.png, url: "https://www.apple.com/library/test/success.html" }
   - { name: Disney,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Disney.png }
-  - { name: Emby,        type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Emby.png }
+  - { name: Emby,        type: select, include-all: true, proxies: [自动选择, DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Emby.png }
   - { name: Netflix,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Netflix.png }
   - { name: Spotify,     type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Spotify.png }
   - { name: TikTok,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/TikTok.png }
   
   # ===================== 生产力 & 常用 =====================
-  - { name: Google,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Google_Search.png, url: "https://www.google.com/generate_204" }
-  - { name: Github,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/GitHub.png } 
-  - { name: Gitlab,      type: select, include-all: true, icon: https://picui.ogmua.cn/s1/2026/08/10/6a799a2579e67.webp }
-  - { name: Microsoft,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Microsoft.png, url: "http://www.msftconnecttest.com/connecttest.txt" }
-  - { name: OneDrive,    type: select, include-all: true, proxies: [DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/OneDrive.png }
+  - { name: Google,      type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Google_Search.png, url: "https://www.google.com/generate_204" }
+  - { name: Github,      type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/GitHub.png } 
+  - { name: Gitlab,      type: select, include-all: true, proxies: [自动选择], icon: https://picui.ogmua.cn/s1/2026/08/10/6a799a2579e67.webp }
+  - { name: Microsoft,   type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Microsoft.png, url: "http://www.msftconnecttest.com/connecttest.txt" }
+  - { name: OneDrive,    type: select, include-all: true, proxies: [自动选择, DIRECT], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/OneDrive.png }
 
   # ===================== 社交 & 即时通讯 ===================== https://macosicons.com/#/
-  - { name: Instagram,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Instagram.png }
   - { name: Facebook,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Facebook.png }
+  - { name: Instagram,   type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Instagram.png }
   - { name: Telegram,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Telegram.png }
   - { name: Twitter(X),  type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Twitter(X).png }
   - { name: WhatsApp,    type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/WhatsApp.png }
