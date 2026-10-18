@@ -168,13 +168,13 @@ FilterJP: &FilterJP "(?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))"
 FilterKR: &FilterKR "(?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))"
 FilterUS: &FilterUS "(?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon valley))"
 FilterUK: &FilterUK "(?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))"
-FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|韭菜|Verizon|GLBB))"
+FilterHM: &FilterHM "(?i)(?=.*(家宽|DMIT|KDDI|韭菜|Verizon|GLBB|软银))"
 
 
 # 代理组
 proxy-groups:
   - { name: 手动选择,     type: select, include-all: true, proxies: [自动选择], icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png }
-  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|Fucker|韭菜|Verizon|GLBB))", proxies: [家宽自动], icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
+  - { name: 家宽选择,     type: select, include-all: true, filter: "(?i)(?=.*(家宽|DMIT|KDDI|韭菜|Verizon|GLBB|软银))", proxies: [家宽自动], icon: https://s41.ax1x.com/2026/05/21/pmSex0g.png }
   - { name: GLOBAL,      type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png }
 
   # ===================== AI大模型 =====================
@@ -210,7 +210,7 @@ proxy-groups:
 
   # ===================== 自动选择 =====================
   - { name: 自动选择,     type: url-test, include-all: true, url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Auto.png }
-  - { name: 家宽自动,     type: url-test, include-all: true, filter: "(?i)(家宽|DMIT|KDDI|SK|韭菜|Verizon|GLBB)", exclude-filter: "(?i)(HK|香港|港|Hong.?Kong)", url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png }
+  - { name: 家宽自动,     type: url-test, include-all: true, filter: "(?i)(家宽|DMIT|KDDI|SK|韭菜|Verizon|GLBB|软银)", exclude-filter: "(?i)(HK|香港|港|Hong.?Kong)", url: "https://www.gstatic.com/generate_204", interval: 300, timeout: 5000, tolerance: 50, lazy: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png }
 
 
 # 规则锚点
